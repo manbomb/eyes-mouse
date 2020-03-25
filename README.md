@@ -25,6 +25,12 @@ Esta biblioteca permite controlar várias funções do mouse, arrastar, clicar, 
 
 Esta biblioteca é de longe indipensável para uma gama enorme de projetos em Python, pois disponibiliza diversos objetos matematicamente úteis, sendo o mais usado o array de zeros e o método mean (média aritmética).
 
+## Recomendações de utilização:
+
+- O seu rosto tem que ser a parte mais clara da imagem da webcam.
+- Utilize movimentos curtos e rápidos. Se virar muito a cabeça pode ser que o sistema não detecte o outro olho e comprometa o movimento.
+- Quando for voltar a cabeça para o centro da tela, sem a intenção de mover o mouse, volte devagar (principalmente quando o movimento por lateral).
+
 ## Algo interessante neste projeto ?
 
 ### Equalização de Histograma com quatro zonas
