@@ -30,6 +30,8 @@ Esta biblioteca é de longe indipensável para uma gama enorme de projetos em Py
 - O seu rosto tem que ser a parte mais clara da imagem da webcam.
 - Utilize movimentos curtos e rápidos. Se virar muito a cabeça pode ser que o sistema não detecte o outro olho e comprometa o movimento.
 - Quando for voltar a cabeça para o centro da tela, sem a intenção de mover o mouse, volte devagar (principalmente quando o movimento por lateral).
+- Não fique muito longe da tela, quanto maior a distância da tela maior a sensibilidade dos movimentos e maior o número de falsos negativos.
+- **Paciência**, é um projeto inicial ainda.
 
 ## Algo interessante neste projeto ?
 
