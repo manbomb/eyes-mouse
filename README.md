@@ -8,6 +8,8 @@ A virtual mouse controled by the eyes.
 
 Fazer com que pessoas que não podem ou não conseguem utilizar o mouse ou mouse pad consigam usar seus computadores da maneira mais natural possível.
 
+![Prints da tela durante utilização](https://github.com/manbomb/eyes-mouse/blob/master/prints.png)
+
 ## O que foi utilizado ?
 
 ### Python
@@ -32,6 +34,7 @@ Esta biblioteca é de longe indipensável para uma gama enorme de projetos em Py
 - Utilize movimentos curtos e rápidos. Se virar muito a cabeça pode ser que o sistema não detecte o outro olho e comprometa o movimento.
 - Quando for voltar a cabeça para o centro da tela, sem a intenção de mover o mouse, volte devagar (principalmente quando o movimento por lateral).
 - Não fique muito longe da tela, quanto maior a distância da tela maior a sensibilidade dos movimentos e maior o número de falsos negativos.
+- Mantenha a câmera imóvel.
 - **Paciência**, é um projeto inicial ainda.
 
 ## Algo interessante neste projeto ?
