@@ -8,6 +8,8 @@ ct = 0
 mmx = 0
 mmy = 0
 
+i_hist = np.zeros(3, dtype=int)
+
 mx = np.zeros(6)
 my = np.zeros(6)
 
@@ -108,18 +110,12 @@ while(True):
 		i = 0
 
 		for (sxe, sye, swe, she) in eyes_ord:
-			mx[5] = mx[4]
-			mx[4] = mx[3]
-			mx[3] = mx[2]
-			mx[2] = mx[1]
-			mx[1] = mx[0]
+
+			for ind in range(1,6):
+				mx[ind] = mx[ind-1]
+				my[ind] = my[ind-1]
+
 			mx[0] = int(sxe+(swe/2)+sx)
-			
-			my[5] = my[4]
-			my[4] = my[3]
-			my[3] = my[2]
-			my[2] = my[1]
-			my[1] = my[0]
 			my[0] = int(sye+(she/2)+sy)
 
 			if int(np.mean(mx)) > mmx+(sw*0.07) and ct>30:
@@ -145,6 +141,16 @@ while(True):
 			i = i+1
 
 		#print(middle_point)
+
+		for ind in range(1,3):
+			i_hist[ind] = i_hist[ind-1]
+
+		i_hist[0] = i
+
+		if i_hist[0] != 0 and i_hist[1] == 0 and i_hist[2] != 0:
+			pa.click(clicks=2)
+
+		print(i_hist);
 
 		if ct%2 == 0 and i != 0:
 			mmx = int(np.mean(middle_point[:,0]))
